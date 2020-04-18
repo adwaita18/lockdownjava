@@ -5,6 +5,11 @@ import org.java.functions.ArrayInputFunction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
+/**
+ * @author prabhu
+ *
+ */
 public class ArrayInputFunctionMain {
 
 	private static Logger log = LoggerFactory.getLogger(ArrayInputFunctionMain.class);
