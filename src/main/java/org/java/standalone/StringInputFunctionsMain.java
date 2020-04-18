@@ -1,6 +1,3 @@
-/**
- * 
- */
 package org.java.standalone;
 
 import java.util.Scanner;
@@ -18,6 +15,7 @@ public class StringInputFunctionsMain {
 
 	public static void main(String[] args) {
 		log.info("Please enter a string of your choice");
+		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 	 String usersString = scan.nextLine();
