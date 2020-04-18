@@ -21,7 +21,7 @@ public class StringInputFunction {
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
-		log.info("Please choose one operation from  below given options"+ "\n");
+		log.info("Please choose one operation from  below given choices"+ "\n");
 		
 		System.out.println("pallindrome, reverse, anagram, wordcount,findduplicate");
 		
