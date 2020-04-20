@@ -1,22 +1,40 @@
 package org.java.standalone;
 
 import java.util.Scanner;
+
 import org.java.functions.ArrayInputFunction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @author prabhu
  *
  */
+
 public class ArrayInputFunctionMain {
 
 	private static Logger log = LoggerFactory.getLogger(ArrayInputFunctionMain.class);
 
-	public static void main(String[] args) {
+	
+	  static { ApplicationContext ctx = new
+	  ClassPathXmlApplicationContext("classpath:/beans.xml");
+	  log.info("Context Loaded");
+	  
+	  }
+	 
 
-		ArrayInputFunction arrayObj = new ArrayInputFunction();
+	
+	private static ArrayInputFunction aif;
+	
+	  @Autowired 	
+	  ArrayInputFunctionMain(ArrayInputFunction aif){ 
+		  this.aif=aif; 
+		  }
+	 
+	public static void main(String[] args) {
 
 		log.info("Please enter the size of the array");
 
@@ -31,7 +49,7 @@ public class ArrayInputFunctionMain {
 		}
 
 		scan.nextLine();
-		arrayObj.inputArray(capacity);
+		aif.inputArray(capacity);
 
 	}
 

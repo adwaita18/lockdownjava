@@ -1,5 +1,8 @@
+org/java/functions/ArrayInputFunction.class
+org/java/functions/ArrayIterator.class
 org/java/standalone/ArrayInputFunctionMain.class
 org/java/standalone/StringInputFunctionsMain.class
-org/java/functions/ArrayInputFunction.class
 org/java/functions/StringFunctions.class
+org/java/collectionchp/ArrayListInput.class
 org/java/functions/StringInputFunction.class
+org/java/standalone/ArrayListInputMain.class
